@@ -21,15 +21,15 @@ public class FileHandling {
       System.out.println(f.isDirectory());
       System.out.println(f.isFile());
 
-    //
-    //  if (myObj.createNewFile()) {
-      //  System.out.println("File created: " + myObj.getName());
-      //} else {
-      //  System.out.println("File already exists.");
-      //}
-    ////} catch (IOException e) {
-      //System.out.println("An error occurred.");
-      //e.printStackTrace();
-    //}
+    
+      if (myObj.createNewFile()) {
+      System.out.println("File created: " + myObj.getName());
+    } else {
+      System.out.println("File already exists.");
+    }
+    } catch (IOException e) {
+    System.out.println("An error occurred.");
+    e.printStackTrace();
+    }
   }
 }
